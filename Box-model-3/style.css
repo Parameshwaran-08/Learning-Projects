@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    background-color: gray;
+    height: 100vh;
+    width:800px;
+    border: 2px solid;
+    margin: auto;
+    position: relative;
+}
+
+.child{
+    height: 75px;
+    width: 100%;
+    border: 2px solid;
+    margin-top: 8px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+#one{
+    height: 50px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#two{
+    height: 85px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+#three{
+    height: 60px;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.column{
+    height: 300px;
+    width: 25%;
+    float: left;
+    margin-top: 10px ;
+}
+
+#four{
+    margin-left: 78px;
+}
+
+#five{
+    margin-left: 16px;
+}
+
+#six{
+    margin-left: 16px;
+}
+
+#seven{
+    position: absolute;
+    top: 93vh; 
+    left: 78px;
+    height: 30px;
+    width: 80%;
+    margin: auto; 
+}
