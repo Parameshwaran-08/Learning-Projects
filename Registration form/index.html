@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <form action="#">
+        <div class="container">
+            <div class="child" id="registration"><p>Registration</p></div>
+
+            <div class="child" id="input">
+                <div class="grid-items">
+                    <label for="fullname">Full Name<span aria-label="required">*</span></label><br>
+                    <input type="text" id="fullname" name="Full Name" placeholder="Enter your fullname"><br>
+                </div>
+
+                <div class="grid-items">
+                    <label for="username">Username<span aria-label="required">*</span></label><br>
+                    <input type="text" id="username" placeholder="Enter your username"><br>
+                </div>
+
+                <div class="grid-items">
+                    <label for="E-mail">E-mail</label><br>
+                    <input type="email" id="email" name="E-mail" placeholder="Enter your email"><br>
+                </div>
+
+                <div class="grid-items">
+                    <label for="phone">Phone Number</label><br>
+                    <input type="tel" id="number" placeholder="Enter your number"><br>
+                </div>
+
+                <div class="grid-items">
+                    <label for="Password">Password<span aria-label="required">*</span></label><br>
+                    <input type="password" placeholder="Enter your password"><br>
+                </div>
+
+                <div class="grid-items">
+                    <label for="password">Confirm Password<span aria-label="required">*</span></label><br>
+                    <input type="password" id="password" placeholder="Confirm your password">
+                </div>
+            </div>
+
+            <div class="child" id="gender">
+                <p>Gender</span></p> 
+                <div class="radio_container">          
+                    <label for="male">
+                        <input type="radio" value="Male" id="male" name="Gender" class="gender">
+                        Male
+                    </label>
+
+                    <label for="female">
+                        <input type="radio" value="Female" id="female" name="Gender" class="gender">
+                        Female
+                    </label>
+                                
+                    <label for="undisclosed">
+                        <input type="radio" value="undisclosed" id="undisclosed" name="Gender" class="gender">
+                        Prefer not to say
+                    </label>
+                </div>
+            </div>
+
+            <div class="child" id="submit">
+                <button id="Register" type="submit">Register</button>
+            </div>
+        </div>
+    </form>
+
+    <table id="table" class="table-container" >
+        <tr>
+          <th>Full Name</th>
+          <th>Username</th>
+          <th>E-mail</th>
+          <th>Phone Number</th>
+          <th>Password</th>
+        </tr>
+      </table>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
