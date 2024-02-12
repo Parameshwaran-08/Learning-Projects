@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-layout-3</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 5px solid;
+            display: grid;
+            height: 100vh;
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+            background-color: crimson;
+        }
+
+        .grid-items{
+            background-color: chartreuse;
+            border: 2px solid;
+            height: 42vh;
+            width: 94%;
+            margin-left:20px;
+        }
+
+        #one{
+            margin-top: 15px;
+            grid-row: span 2;
+            height: 93.7vh;
+            width: 100%;
+        }
+
+        #two{
+            margin-top: 15px;
+            height: 46vh;
+        }
+
+        #three{
+            height: 46vh;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-items" id="one"></div>
+        <div class="grid-items" id="two"></div>
+        <div class="grid-items" id="three"></div>
+    </div>
+</body>
+</html>

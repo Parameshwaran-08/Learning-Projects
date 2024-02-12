@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-layout-4</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: crimson;
+            border: 5px solid;
+            display: grid;
+            height: 100vh;
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .grid-items{
+            background-color: chartreuse;
+
+            height: 20vh;
+            width: 50%;
+            margin-left:20px;
+        }
+
+        #one{
+            grid-row: span 2;
+            height : 95vh;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        #two{
+            height: 96%;
+            width: 94%;
+            margin-top: 10px;
+        }
+
+        #mini-container{
+            background-color: crimson;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 96.5%;
+            width: 94%;
+            gap: 10px
+        }
+
+        #mini-2{
+            height: 100%;
+            grid-row: span 2;
+            width: 100%;
+            margin-left: 0px;
+        }
+
+        #mini-1{
+            height: 100%;
+            width: 100%;
+            margin-left: 0px;
+        }
+
+        #mini-3{
+            height: 100%;
+            width: 100%;
+            margin-left: 0px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-items" id="one"></div>
+        <div class="grid-items" id="two"></div>
+        <div class="grid-items" id="mini-container">
+            <div class="grid-items" id="mini-1"></div>
+            <div class="grid-items" id="mini-2"></div>
+            <div class="grid-items" id="mini-3"></div>
+        </div>
+    </div>
+</body>
+</html>

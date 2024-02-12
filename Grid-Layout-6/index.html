@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-layout-5</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: chartreuse;
+            height: 100vh;
+            width: 100%;
+            border: 5px solid;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+        }
+
+        .mini-container{
+            display: grid;
+            grid-template-rows:1fr 2fr;
+            height: 99vh;
+            gap: 5px;
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+        .grid-items{
+            background-color: blueviolet;
+            height: 93%;
+            border: 2px solid;
+            width: 99%;
+            margin-top: 15px;
+        }
+        
+        .container2{
+            display: grid;
+            grid-template-rows:2fr 1fr;
+            height: 97.3vh;
+            gap: 3px;
+            margin-left: 5px;
+        }
+
+        .middle{
+            border: 2px solid;
+            width: 98.8%;
+            height: 99%;
+            margin-top: 5px;
+        }
+
+        .small{
+            margin-top: 0px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .large{
+            margin-top: 0px;
+            height: 97%;
+            width: 100%;
+        }
+
+        .container3{          
+            margin: 0px;
+            margin-top: 5px;
+            margin-right: 4px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mini-container container1">
+            <div class="grid-items small"></div>
+            <div class="grid-items large"></div>
+        </div>
+        <div class="container2">
+            <div class="grid-items middle"></div>
+            <div class="grid-items middle"></div>
+        </div> 
+        <div class="mini-container container3">
+            <div class="grid-items small"></div>
+            <div class="grid-items large"></div>
+        </div>
+    </div>
+</body>
+</html>
