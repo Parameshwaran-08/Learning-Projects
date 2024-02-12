@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-layout-7</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 2fr 1.5fr 1fr;
+            gap: 5px;
+            background-color: blueviolet;
+
+        }
+
+        .child-container{
+            height: 98.4%;
+            width: 98.4%;
+            margin-top: 5px;
+            
+
+        }
+
+        .first{
+            margin-left: 5px;
+            background-color: cyan;
+        }
+        
+        .middle{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 2fr 1fr;
+            gap: 10px;
+        }
+
+        .m{
+            background-color: cyan;
+        }
+        
+        .m-one{
+            grid-area: 1 / 1 / 1 / -1;
+        }
+
+        
+        .last{
+            margin-top: 5px;
+            margin-right: 0px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .l{
+            background-color: cyan;
+        }
+            
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child-container first"></div>
+        <div class="child-container middle">
+            <div class="grid-items m-one m"></div>
+            <div class="grid-items m-two m"></div>
+            <div class="grid-items m-three m"></div>
+        </div>
+        <div class="child-container last">
+            <div class="grid-items l-one l"></div>
+            <div class="grid-items l-two l"></div>
+            <div class="grid-items l-three l"></div>
+        </div>
+    </div>
+</body>
+</html>
