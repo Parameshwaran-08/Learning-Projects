@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="">
+        <div class="wrapper">
+            <div class="image-container flex-item">
+                <img src="./images/picture.jpeg" alt="Welcome image" height="542">
+            </div>
+            <div class="container flex-item">
+                <div class="grid-container">
+                    <div class="items header">
+                        <p id="big">Login</p>
+                        <p>Please login to continue</p>
+                    </div>
+                    <div class="items input">
+                        <label class="input-label" for="username">Username <span aria-label="required">*</span></label>
+                        <input class="input-box" type="text" id="username" placeholder="Enter your username" required><br>
+
+                        <label class="input-label" for="password">Password <span aria-label="required">*</span></label>
+                        <input class="input-box" type="password" id="password" placeholder="Enter your password" required><br>
+
+                        <div class="forgot">
+                            <div>
+                                <input class="input-checkbox" type="checkbox" id="checkbox" value="yes" name="keep logged">
+                                <label class="input-checkbox" for="checkbox">Keep me logged in</label>
+                            </div>
+                            <a href="https://support.google.com"><span><p>Forgot Password ?</span></p></a>
+                        </div>
+                        <button id="button" class="input-box type="submit" name="login" value="yes">Login</button>
+                    </div>
+                    <div class="items options">
+                        <p>Or</p>
+                        <p>Login with</p>
+                        <div class="logos">
+                            <img src="./images/fb_logo.png" alt="facebook logo" class="logo" id="fb">
+                            <img src="./images/twitter_logo.png" alt="Twitter logo" class="logo" id="twitter">
+                            <img src="./images/google_logo.png" alt="google logo" class="logo" id="google">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

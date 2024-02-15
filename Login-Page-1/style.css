@@ -1,0 +1,153 @@
+*{
+    font-family: "Fredoka", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #40A2E3;
+  
+}
+
+.wrapper{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid white;
+    height: 90vh;
+    margin-top: 30px;
+    width: 210vh;
+    border-radius: 15px;
+}
+
+.flex-item{
+    flex-basis: 50%;
+}
+
+.image-container{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #BBE2EC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.grid-container{
+    display: grid;
+    height: 90%;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header > #big{
+    font-size: 2rem;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+
+.input > .input-label{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.input-box{
+    height: 40px;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #40A2E3;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;   
+    border-radius: 5px;
+}
+
+.input-box:focus,.input-box:valid{
+    border-color: #40A2E3;
+}
+
+.input-label{
+    margin-top: 15px;
+}
+
+#password{
+    margin-bottom: 15px;
+    color: #40A2E3;
+}
+
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.forgot > a{
+    text-decoration: none;
+    color: black;
+}
+
+.input > {
+    margin-top: 0px;
+    align-self: flex-start;
+}
+
+#button{
+    background-color: #40A2E3;
+    color: white;
+    padding: 0px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.options > p{
+    font-size: 20px ;
+    font-weight: 500;
+}
+
+.logos{
+    margin-top: 15px;
+}
+
+#twitter{
+    height: 46.5px;
+    width: 46.5px;
+    margin-bottom: 2px;
+}
+
+#google{
+    height: 46.5px;
+    width: 46.5px;
+    margin-bottom: 2px;
+}
